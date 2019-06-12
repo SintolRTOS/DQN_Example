@@ -8,6 +8,7 @@ from .agent import Agent
 
 logger = getLogger(__name__)
 
+#用于构建MDP中的DQN环境中的观察者、Q函数、策略决策
 class DeepQ(Agent):
   def __init__(self, sess, pred_network, env, stat, conf, target_network=None):
     super(DeepQ, self).__init__(sess, pred_network, env, stat, conf, target_network=target_network)

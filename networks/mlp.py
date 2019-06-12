@@ -3,6 +3,8 @@ import tensorflow as tf
 from .layers import *
 from .network import Network
 
+#多层网络感知机
+#用于处理DQN的深度神经网络
 class MLPSmall(Network):
   def __init__(self, sess,
                data_format,

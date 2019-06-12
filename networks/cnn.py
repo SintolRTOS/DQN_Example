@@ -4,6 +4,8 @@ import tensorflow as tf
 from .layers import *
 from .network import Network
 
+#创建卷积神经网络
+#主要用于处理游戏中的像素图，形成特征值
 class CNN(Network):
   def __init__(self, sess,
                data_format,
